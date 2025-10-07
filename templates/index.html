@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome - AI Chatbot{% endblock %}
+
+{% block content %}
+<div class="landing-container">
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title gradient-text">
+                <span class="typing-text">AI-Powered Chatbot</span>
+            </h1>
+            <p class="hero-subtitle">
+                Experience intelligent conversations with our advanced AI assistant
+            </p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('login') }}" class="btn btn-primary">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Login
+                </a>
+                <a href="{{ url_for('register') }}" class="btn btn-secondary">
+                    <i class="fas fa-user-plus"></i>
+                    Sign Up
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="chat-preview glass-card">
+                <div class="chat-header">
+                    <div class="chat-status">
+                        <span class="status-dot"></span>
+                        AI Assistant Online
+                    </div>
+                </div>
+                <div class="chat-messages">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            Hello! I'm your AI assistant. How can I help you today?
+                        </div>
+                    </div>
+                    <div class="message user-message">
+                        <div class="message-content">
+                            Tell me about artificial intelligence
+                        </div>
+                    </div>
+                    <div class="message bot-message typing">
+                        <div class="message-content">
+                            <div class="typing-indicator">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-section">
+        <h2 class="section-title gradient-text">Features</h2>
+        <div class="features-grid">
+            <div class="feature-card glass-card flip-card" data-tilt>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Intelligent AI</h3>
+                        <p>Advanced NLP powered responses</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Smart Learning</h3>
+                        <p>Our AI continuously learns and adapts to provide better, more contextual responses for every conversation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card glass-card flip-card" data-tilt>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Natural Conversations</h3>
+                        <p>Human-like chat interactions</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Conversational AI</h3>
+                        <p>Experience natural, flowing conversations that feel like talking to a knowledgeable friend.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card glass-card flip-card" data-tilt>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure & Private</h3>
+                        <p>Your data is protected</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Privacy First</h3>
+                        <p>We prioritize your privacy with encrypted conversations and secure user authentication.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card glass-card flip-card" data-tilt>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>24/7 Available</h3>
+                        <p>Always ready to help</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Always Online</h3>
+                        <p>Get instant responses anytime, anywhere. Our AI never sleeps and is always ready to assist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/landing.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening", "Howdy"],
+      "responses": ["Hello! How can I help you today?", "Hi there! What can I do for you?", "Greetings! How may I assist you?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you later", "Take care", "Until next time"],
+      "responses": ["Goodbye! Have a great day!", "See you later!", "Take care! Come back anytime."]
+    },
+    {
+      "tag": "ai_info",
+      "patterns": ["What are you", "Who are you", "Tell me about yourself", "What is AI"],
+      "responses": ["I'm an AI-powered chatbot designed to help answer your questions and have conversations with you!", "I'm an artificial intelligence assistant created to help users like yourself."]
+    },
+    {
+      "tag": "weather",
+      "patterns": ["What's the weather", "Weather forecast", "Is it raining", "Temperature"],
+      "responses": ["I don't have access to real-time weather data, but I recommend checking a weather app or website for current conditions in your area."]
+    },
+    {
+      "tag": "time",
+      "patterns": ["What time is it", "Current time", "Time now"],
+      "responses": ["I don't have access to real-time data, but you can check the time on your device or computer."]
+    },
+    {
+      "tag": "help",
+      "patterns": ["Help", "What can you do", "How can you help", "Assistance"],
+      "responses": ["I can help answer questions, provide information, and have conversations with you! Feel free to ask me anything.", "I'm here to assist you with various topics. What would you like to know?"]
+    }
+  ]
+}
