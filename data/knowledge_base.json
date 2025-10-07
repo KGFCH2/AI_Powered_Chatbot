@@ -2,33 +2,387 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening", "Howdy"],
-      "responses": ["Hello! How can I help you today?", "Hi there! What can I do for you?", "Greetings! How may I assist you?"]
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening", "Howdy", "What's up", "Hiya", "Good afternoon", "Greetings", "Sup", "Morning", "Evening", "Good day", "Bonjour", "Hola", "Namaste", "Salaam"],
+      "responses": [
+        "Hello! How can I help you today?", 
+        "Hi there! What can I do for you?", 
+        "Greetings! How may I assist you?",
+        "Hey! I'm your AI assistant. How can I help?",
+        "Hello! Welcome to our AI chatbot. What can I do for you?",
+        "Hi! Great to see you here. What's on your mind?",
+        "Good day! I'm ready to help with whatever you need.",
+        "Hello! I'm excited to chat with you today!",
+        "Hi! I'm here and ready to assist you with anything!"
+      ]
+    },
+    {
+      "tag": "daily_life",
+      "patterns": ["How to cook", "Recipe for", "Cleaning tips", "Laundry", "Household chores", "Grocery shopping", "Budget", "How to save money", "Daily routine", "Time management", "Productivity tips", "Morning routine", "Sleep schedule", "Exercise routine", "Healthy habits", "Meal prep", "House cleaning", "Organization tips", "Life hacks", "How to be productive", "Daily schedule", "Work life balance", "Stress management", "Self care", "Mindfulness", "Meditation", "How to wake up early", "Skincare routine", "Hair care", "Personal hygiene"],
+      "responses": [
+        "Daily life can be made easier with good routines and organization! What specific area would you like tips on?",
+        "I'd be happy to help with daily life advice! Whether it's cooking, cleaning, or personal care, I'm here to assist.",
+        "Living well involves creating good habits and systems. What aspect of daily life interests you?",
+        "From meal planning to time management, there are many ways to improve daily life. What would you like to know about?",
+        "Daily routines and life skills are so important! I can help with tips on cooking, cleaning, budgeting, and more.",
+        "Self-care and good daily habits make such a difference in quality of life. What area would you like advice on?",
+        "I love helping with practical daily life questions! What specific topic can I assist you with today?"
+      ]
+    },
+    {
+      "tag": "technology_general",
+      "patterns": ["Technology", "AI", "Artificial intelligence", "Machine learning", "Programming", "Coding", "Software", "Hardware", "Computer", "Tech", "Digital", "Internet", "Online", "Website", "App", "Mobile", "Smartphone", "Laptop", "Desktop", "Cloud computing", "Cybersecurity", "Data science", "Big data", "IoT", "Internet of things", "Blockchain", "Cryptocurrency", "Virtual reality", "Augmented reality", "5G", "Wifi", "Network", "Database", "Algorithm"],
+      "responses": [
+        "Technology is fascinating! AI and machine learning are revolutionizing how we interact with computers.",
+        "Artificial Intelligence is a rapidly growing field that aims to create intelligent machines.",
+        "I'm a product of AI technology myself! It's amazing how far we've come.",
+        "Technology continues to evolve and improve our daily lives in countless ways.",
+        "From machine learning to quantum computing, technology is pushing the boundaries of what's possible!",
+        "The digital revolution has transformed how we work, communicate, and solve problems.",
+        "Modern technology connects us globally and enables incredible innovations every day!"
+      ]
+    },
+    {
+      "tag": "programming",
+      "patterns": ["Python", "JavaScript", "Java", "C++", "HTML", "CSS", "React", "Node.js", "Angular", "Vue", "PHP", "Ruby", "Go", "Rust", "Swift", "Kotlin", "SQL", "NoSQL", "MongoDB", "PostgreSQL", "MySQL", "Git", "GitHub", "API", "REST", "GraphQL", "Docker", "Kubernetes", "AWS", "Azure", "Google Cloud", "Linux", "Windows", "MacOS", "IDE", "VSCode", "Framework", "Library", "Frontend", "Backend", "Full stack", "Debugging", "Testing", "DevOps"],
+      "responses": [
+        "Programming is an amazing skill! Which programming language or technology are you interested in learning about?",
+        "Coding opens up so many possibilities for creating amazing applications and solving problems!",
+        "The world of software development is vast and exciting. What programming topic can I help you with?",
+        "From web development to mobile apps, programming skills are incredibly valuable today.",
+        "Whether you're a beginner or experienced developer, there's always something new to learn in programming!",
+        "Software engineering combines creativity with logical thinking. What coding topic interests you?",
+        "Programming languages each have their strengths - what kind of development are you interested in?"
+      ]
+    },
+    {
+      "tag": "social_media",
+      "patterns": ["Facebook", "Instagram", "Twitter", "TikTok", "YouTube", "LinkedIn", "Snapchat", "WhatsApp", "Telegram", "Discord", "Reddit", "Pinterest", "Tumblr", "Social media", "Influencer", "Content creator", "Viral", "Hashtag", "Follow", "Like", "Share", "Comment", "Post", "Story", "Reel", "Tweet", "Social networking", "Online presence", "Digital marketing", "Brand", "Engagement", "Algorithm", "Analytics", "Social media marketing", "Content strategy", "Followers", "Subscribers"],
+      "responses": [
+        "Social media has revolutionized how we connect and share information globally!",
+        "These platforms have changed communication, marketing, and entertainment in amazing ways.",
+        "Social media offers incredible opportunities for connection, creativity, and business growth.",
+        "From staying in touch with friends to building businesses, social platforms serve many purposes.",
+        "The social media landscape is constantly evolving with new features and platforms emerging.",
+        "Digital communication through social media has become an integral part of modern life.",
+        "Content creation and social media marketing have opened up new career opportunities for many people!"
+      ]
+    },
+    {
+      "tag": "entertainment_movies",
+      "patterns": ["Movies", "Films", "Cinema", "Hollywood", "Bollywood", "Nollywood", "Marvel", "DC", "Disney", "Netflix", "Amazon Prime", "Hulu", "HBO", "Director", "Actor", "Actress", "Screenplay", "Plot", "Genre", "Action", "Comedy", "Drama", "Horror", "Thriller", "Romance", "Sci-fi", "Fantasy", "Documentary", "Animation", "Pixar", "Studio Ghibli", "Oscar", "Emmy", "Golden Globe", "Cannes", "Film festival", "Box office", "Blockbuster", "Indie film", "Foreign film"],
+      "responses": [
+        "Movies are such a wonderful form of entertainment and artistic expression! What genres do you enjoy?",
+        "Cinema from around the world offers incredible diversity in storytelling and filmmaking styles.",
+        "From Hollywood blockbusters to independent films, there's something for every taste in movies!",
+        "The film industry has produced countless masterpieces that entertain, inspire, and move audiences.",
+        "Movie streaming has revolutionized how we watch and discover films from all over the world.",
+        "Great filmmaking combines storytelling, visuals, music, and performances to create memorable experiences.",
+        "International cinema offers amazing perspectives and stories from different cultures and countries!"
+      ]
+    },
+    {
+      "tag": "entertainment_tv",
+      "patterns": ["TV shows", "Television", "Series", "Sitcom", "Drama series", "Reality TV", "Talk show", "Game show", "News", "Documentary series", "Anime", "Cartoon", "Kids shows", "Streaming", "Binge watching", "Season", "Episode", "Finale", "Premiere", "Cliffhanger", "Character development", "Plot twist", "TV network", "Cable", "Satellite", "Cord cutting", "OTT platform"],
+      "responses": [
+        "Television has evolved so much with streaming platforms and amazing series production!",
+        "TV shows today rival movies in production quality and storytelling complexity.",
+        "From classic sitcoms to modern dramas, television entertainment has something for everyone.",
+        "Binge-watching has changed how we consume TV content in the streaming era.",
+        "International TV shows have gained global popularity thanks to streaming platforms.",
+        "The golden age of television has brought us incredible storytelling and character development.",
+        "TV series allow for long-form storytelling that can develop characters and plots over time."
+      ]
+    },
+    {
+      "tag": "cartoons_animation",
+      "patterns": ["Cartoons", "Animation", "Animated movies", "Disney movies", "Pixar films", "Cartoon Network", "Nickelodeon", "Adult Swim", "Anime", "Manga", "Studio Ghibli", "Tom and Jerry", "Mickey Mouse", "Looney Tunes", "SpongeBob", "The Simpsons", "Family Guy", "Rick and Morty", "Adventure Time", "Avatar", "Dragon Ball", "Naruto", "One Piece", "Pokemon", "My Hero Academia", "Attack on Titan", "Spirited Away", "Frozen", "Toy Story", "Finding Nemo", "Shrek", "How to Train Your Dragon"],
+      "responses": [
+        "Animation is such a creative and magical medium! It can tell stories that live-action sometimes can't.",
+        "From classic Disney to modern anime, animated content appeals to audiences of all ages.",
+        "Cartoons and animation have evolved tremendously in terms of storytelling and visual quality.",
+        "Anime has become a global phenomenon with incredible artistic styles and complex narratives.",
+        "Animation studios like Pixar, Studio Ghibli, and Disney have created timeless masterpieces.",
+        "Animated series often tackle deep themes while remaining entertaining and accessible.",
+        "The art of animation combines technical skill with creative storytelling in beautiful ways!"
+      ]
+    },
+    {
+      "tag": "music_entertainment",
+      "patterns": ["Music", "Songs", "Albums", "Artists", "Musicians", "Singers", "Bands", "Pop music", "Rock", "Hip hop", "Rap", "Jazz", "Classical", "Country", "Electronic", "EDM", "R&B", "Soul", "Reggae", "Blues", "Folk", "Indie", "Alternative", "Metal", "Punk", "Disco", "Funk", "House", "Techno", "Spotify", "Apple Music", "YouTube Music", "Concerts", "Festivals", "Grammy", "Billboard", "Instruments", "Guitar", "Piano", "Drums", "Violin"],
+      "responses": [
+        "Music is the universal language that connects people across all cultures and backgrounds!",
+        "From classical symphonies to modern pop hits, music has the power to evoke deep emotions.",
+        "The music industry has transformed with streaming platforms making music more accessible than ever.",
+        "Every genre of music has its own unique characteristics and devoted fanbase.",
+        "Live music experiences like concerts and festivals create unforgettable memories.",
+        "Music streaming has revolutionized how we discover and enjoy music from around the world.",
+        "Musical instruments and composition allow for infinite creative expression and artistic exploration!"
+      ]
+    },
+    {
+      "tag": "world_cinema",
+      "patterns": ["International cinema", "Foreign films", "French cinema", "Italian films", "German movies", "Spanish cinema", "Japanese films", "Korean movies", "Chinese cinema", "Indian films", "British movies", "Russian films", "Iranian cinema", "Brazilian movies", "Mexican films", "Scandinavian cinema", "African cinema", "Middle Eastern films", "Art house cinema", "World film festivals", "Subtitles", "Dubbing", "Cultural films", "International directors", "Global storytelling"],
+      "responses": [
+        "World cinema offers incredible diversity in storytelling, cultural perspectives, and filmmaking styles!",
+        "International films provide windows into different cultures, histories, and ways of life.",
+        "From Korean cinema to French New Wave, each country has contributed unique artistic movements to film.",
+        "Subtitled films allow us to experience authentic performances and hear the beauty of different languages.",
+        "World cinema festivals celebrate the global nature of filmmaking and cross-cultural understanding.",
+        "International directors have created some of the most innovative and influential films in cinema history.",
+        "Foreign films often tackle universal themes while being rooted in specific cultural contexts."
+      ]
+    },
+    {
+      "tag": "current_affairs",
+      "patterns": ["Current events", "News", "Politics", "Elections", "Government", "World news", "Breaking news", "Headlines", "International relations", "Diplomacy", "Economy", "Stock market", "Inflation", "Unemployment", "GDP", "Trade", "Global economy", "Climate change", "Environment", "Sustainability", "Renewable energy", "Social issues", "Human rights", "Democracy", "Legislation", "Policy", "Public health", "Pandemic", "Healthcare", "Education policy", "Technology policy"],
+      "responses": [
+        "Current affairs shape our world and it's important to stay informed about major developments.",
+        "I can discuss general topics, but for the latest news, I recommend checking reliable news sources.",
+        "World events and politics affect us all, though perspectives on issues can vary widely.",
+        "Economic trends, environmental issues, and social changes are major themes in current affairs.",
+        "For up-to-date information on current events, trusted news organizations are your best source.",
+        "Global challenges like climate change and economic inequality require informed public engagement.",
+        "Democratic participation and staying informed about issues are important civic responsibilities."
+      ]
+    },
+    {
+      "tag": "world_news",
+      "patterns": ["Global news", "International events", "World politics", "United Nations", "NATO", "European Union", "Brexit", "Trade wars", "Conflicts", "Peace talks", "Refugees", "Immigration", "Global health", "WHO", "International aid", "Development", "Poverty", "Global warming", "International trade", "Currencies", "Foreign exchange", "Globalization", "Cultural exchange", "Olympics", "World Cup", "International sports", "Global economy", "Multinational companies"],
+      "responses": [
+        "World news covers the interconnected events that affect countries and people globally.",
+        "International affairs involve complex relationships between nations, organizations, and cultures.",
+        "Global challenges require international cooperation and understanding across borders.",
+        "World events often have far-reaching impacts that affect people everywhere.",
+        "For current world news, I recommend checking reputable international news organizations.",
+        "Understanding global perspectives helps us appreciate the complexity of world affairs.",
+        "International cooperation on issues like health, environment, and peace benefits everyone."
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": ["Sports", "Football", "Soccer", "Basketball", "Baseball", "Tennis", "Golf", "Swimming", "Running", "Athletics", "Olympics", "World Cup", "NBA", "NFL", "FIFA", "Cricket", "Rugby", "Hockey", "Volleyball", "Badminton", "Table tennis", "Boxing", "MMA", "Wrestling", "Cycling", "Marathon", "Gymnastics", "Figure skating", "Skiing", "Snowboarding", "Surfing", "Fitness", "Workout", "Gym", "Training", "Sports nutrition", "Athletes", "Championships", "Tournaments"],
+      "responses": [
+        "Sports bring people together and showcase incredible human athletic achievement!",
+        "Whether playing or watching, sports provide entertainment, exercise, and community.",
+        "Athletic competition at the highest levels like the Olympics inspires people worldwide.",
+        "Sports teach valuable lessons about teamwork, perseverance, and healthy competition.",
+        "From recreational activities to professional leagues, sports are enjoyed by billions globally.",
+        "Fitness and sports activities are great for physical health and mental well-being.",
+        "International sporting events create shared experiences that unite people across cultures!"
+      ]
+    },
+    {
+      "tag": "food_cooking",
+      "patterns": ["Food", "Cooking", "Recipe", "Cuisine", "Restaurant", "Eat", "Meal", "Dish", "Nutrition", "Healthy eating", "Diet", "Vegetarian", "Vegan", "Breakfast", "Lunch", "Dinner", "Snacks", "Dessert", "Baking", "Grilling", "Roasting", "Frying", "Steaming", "Italian food", "Chinese food", "Indian food", "Mexican food", "French cuisine", "Japanese food", "Thai food", "Mediterranean diet", "Fast food", "Street food", "Home cooking", "Chef", "Kitchen", "Ingredients", "Spices", "Herbs"],
+      "responses": [
+        "Food is one of life's great pleasures and brings people together across all cultures!",
+        "Cooking is both an art and a science that allows for endless creativity and experimentation.",
+        "Different cuisines from around the world offer amazing flavors, techniques, and traditions.",
+        "Nutrition and healthy eating are important for physical well-being and energy levels.",
+        "From simple home cooking to gourmet dining, food experiences can be incredibly satisfying.",
+        "Cultural food traditions tell stories and connect us to our heritage and each other.",
+        "Learning to cook opens up a world of flavors and gives you control over your nutrition!"
+      ]
+    },
+    {
+      "tag": "health_wellness",
+      "patterns": ["Health", "Medical", "Doctor", "Medicine", "Fitness", "Exercise", "Nutrition", "Wellness", "Disease", "Mental health", "Physical health", "Preventive care", "Healthy lifestyle", "Diet", "Weight loss", "Weight gain", "Muscle building", "Cardio", "Strength training", "Yoga", "Meditation", "Sleep", "Stress", "Anxiety", "Depression", "Therapy", "Counseling", "Vitamins", "Supplements", "Immunity", "Vaccination", "Healthcare", "Hospital", "Clinic", "Symptoms", "Treatment", "Recovery"],
+      "responses": [
+        "Health is incredibly important! For medical advice, please consult with healthcare professionals.",
+        "Wellness involves physical, mental, and emotional health working together harmoniously.",
+        "Regular exercise, good nutrition, and adequate sleep are foundations of good health.",
+        "Mental health is just as important as physical health and deserves attention and care.",
+        "Preventive healthcare and healthy lifestyle choices can help avoid many health issues.",
+        "For any health concerns or medical questions, always consult with qualified healthcare providers.",
+        "A holistic approach to wellness includes physical activity, good nutrition, stress management, and social connections."
+      ]
+    },
+    {
+      "tag": "travel",
+      "patterns": ["Travel", "Vacation", "Trip", "Journey", "Destination", "Tourism", "Adventure", "Explore", "Country", "City", "Beach", "Mountains", "Desert", "Forest", "Culture", "History", "Monuments", "Museums", "Hotels", "Flights", "Trains", "Road trip", "Backpacking", "Cruise", "Safari", "Hiking", "Camping", "Sightseeing", "Local food", "Souvenirs", "Photography", "Travel tips", "Budget travel", "Luxury travel", "Solo travel", "Family vacation", "Honeymoon", "Business travel"],
+      "responses": [
+        "Travel opens our minds to new experiences, cultures, and perspectives on life!",
+        "Exploring new places creates lasting memories and broadens our understanding of the world.",
+        "From adventure travel to cultural exploration, there are so many ways to experience different destinations.",
+        "Travel helps us appreciate both the diversity and common humanity we share with people worldwide.",
+        "Whether domestic or international, every journey offers opportunities for discovery and growth.",
+        "Planning trips and exploring new destinations can be as exciting as the travel itself!",
+        "Travel experiences often become some of our most treasured memories and stories to share."
+      ]
+    },
+    {
+      "tag": "education_learning",
+      "patterns": ["Education", "School", "University", "College", "Learning", "Study", "Knowledge", "Teaching", "Academic", "Student", "Teacher", "Professor", "Degree", "Diploma", "Certificate", "Course", "Online learning", "E-learning", "Distance education", "Curriculum", "Exam", "Test", "Assignment", "Homework", "Research", "Thesis", "Dissertation", "Library", "Books", "Textbooks", "Scholarship", "Tuition", "Skills", "Training", "Professional development", "Continuing education", "Lifelong learning"],
+      "responses": [
+        "Education is the foundation for personal growth, career development, and societal progress!",
+        "Learning doesn't stop after formal education - it's a lifelong journey of discovery and growth.",
+        "Knowledge and skills acquired through education open doors to countless opportunities.",
+        "Online learning has revolutionized access to education and made learning more flexible than ever.",
+        "From early childhood education to advanced degrees, learning shapes our understanding of the world.",
+        "Teaching and mentoring others is one of the most rewarding ways to share knowledge and wisdom.",
+        "Critical thinking, problem-solving, and communication skills are valuable in any field of study!"
+      ]
+    },
+    {
+      "tag": "work_career",
+      "patterns": ["Work", "Job", "Career", "Profession", "Business", "Office", "Employment", "Workplace", "Productivity", "Resume", "Interview", "Salary", "Promotion", "Manager", "Team", "Colleague", "Meeting", "Deadline", "Project", "Skills", "Experience", "Qualification", "Training", "Leadership", "Entrepreneur", "Startup", "Company", "Corporation", "Industry", "Remote work", "Work from home", "Freelance", "Consultant", "Networking", "Professional development", "Work life balance", "Retirement", "Pension"],
+      "responses": [
+        "Career development is an ongoing journey of skill-building, networking, and finding meaningful work!",
+        "The modern workplace is evolving with remote work, technology, and changing employment patterns.",
+        "Finding work that aligns with your values and interests can lead to greater job satisfaction.",
+        "Professional skills like communication, teamwork, and adaptability are valuable in any career.",
+        "Work-life balance is crucial for long-term career success and personal well-being.",
+        "Continuous learning and skill development help professionals stay competitive and engaged.",
+        "Building professional relationships and networks opens doors to new opportunities and collaborations."
+      ]
+    },
+    {
+      "tag": "gaming",
+      "patterns": ["Games", "Video games", "Gaming", "Console", "PC gaming", "Mobile games", "PlayStation", "Xbox", "Nintendo", "Steam", "Online gaming", "Multiplayer", "Single player", "RPG", "Action games", "Strategy games", "Puzzle games", "Sports games", "Racing games", "Simulation games", "Indie games", "AAA games", "Esports", "Gaming community", "Streaming", "Twitch", "YouTube gaming", "Game development", "Game design", "Virtual reality gaming", "Augmented reality games"],
+      "responses": [
+        "Gaming has become a major form of entertainment and social interaction for millions worldwide!",
+        "Video games offer immersive experiences, storytelling, and challenges across many genres.",
+        "The gaming industry has grown tremendously and now includes professional esports competitions.",
+        "From casual mobile games to complex RPGs, there's something for every type of gamer.",
+        "Gaming communities bring people together around shared interests and collaborative experiences.",
+        "Game development combines technology, art, storytelling, and design in creative ways.",
+        "Virtual and augmented reality are pushing the boundaries of what's possible in gaming!"
+      ]
+    },
+    {
+      "tag": "science",
+      "patterns": ["Science", "Physics", "Chemistry", "Biology", "Research", "Scientific", "Experiment", "Discovery", "Theory", "Space", "Astronomy", "Earth science", "Geology", "Meteorology", "Oceanography", "Ecology", "Evolution", "Genetics", "DNA", "Climate science", "Nuclear physics", "Quantum physics", "Molecular biology", "Neuroscience", "Psychology", "Sociology", "Anthropology", "Archaeology", "Mathematics", "Statistics", "Engineering", "Medical research", "Scientific method", "Nobel Prize"],
+      "responses": [
+        "Science helps us understand the natural world through observation, experimentation, and evidence!",
+        "Scientific discoveries have revolutionized medicine, technology, and our understanding of the universe.",
+        "From the smallest particles to the vastness of space, science explores all scales of existence.",
+        "The scientific method provides a reliable way to test ideas and build knowledge systematically.",
+        "Interdisciplinary research often leads to the most exciting breakthroughs and innovations.",
+        "Science education helps develop critical thinking and evidence-based reasoning skills.",
+        "Scientific collaboration across countries and cultures advances human knowledge for everyone's benefit!"
+      ]
+    },
+    {
+      "tag": "environment_climate",
+      "patterns": ["Environment", "Climate change", "Global warming", "Sustainability", "Renewable energy", "Solar power", "Wind energy", "Pollution", "Recycling", "Conservation", "Biodiversity", "Ecosystem", "Wildlife", "Endangered species", "Deforestation", "Ocean pollution", "Plastic waste", "Carbon footprint", "Green technology", "Electric vehicles", "Clean energy", "Environmental protection", "Nature conservation", "Ecological balance", "Greenhouse gases", "Ozone layer", "Water conservation", "Organic farming", "Environmental policy"],
+      "responses": [
+        "Environmental protection is crucial for the health of our planet and future generations.",
+        "Climate change is one of the most pressing challenges facing humanity today.",
+        "Sustainable practices and renewable energy can help reduce our environmental impact.",
+        "Biodiversity and ecosystem health are essential for a balanced and thriving planet.",
+        "Individual actions like recycling, conserving energy, and reducing waste can make a difference.",
+        "Green technology and innovation offer promising solutions to environmental challenges.",
+        "Environmental awareness and education help people make more sustainable choices in daily life."
+      ]
+    },
+    {
+      "tag": "relationships",
+      "patterns": ["Relationships", "Love", "Dating", "Marriage", "Family", "Friends", "Friendship", "Romance", "Partner", "Spouse", "Boyfriend", "Girlfriend", "Parents", "Children", "Siblings", "Communication", "Trust", "Commitment", "Conflict resolution", "Intimacy", "Support", "Understanding", "Empathy", "Social skills", "Networking", "Community", "Social connections", "Loneliness", "Social anxiety", "Relationship advice"],
+      "responses": [
+        "Healthy relationships are built on trust, communication, respect, and mutual support.",
+        "Strong social connections contribute significantly to happiness and mental well-being.",
+        "Good communication skills are essential for maintaining positive relationships with others.",
+        "Every relationship requires effort, understanding, and compromise from all parties involved.",
+        "Family and friendships provide emotional support and shared experiences throughout life.",
+        "Building new relationships and maintaining existing ones are important life skills.",
+        "Healthy boundaries and mutual respect are crucial components of all good relationships."
+      ]
+    },
+    {
+      "tag": "art_creativity",
+      "patterns": ["Art", "Painting", "Drawing", "Sculpture", "Photography", "Creative", "Artistic", "Gallery", "Museum", "Artist", "Canvas", "Brush", "Colors", "Design", "Graphic design", "Digital art", "Traditional art", "Modern art", "Contemporary art", "Abstract art", "Portrait", "Landscape", "Still life", "Sketch", "Illustration", "Animation", "Crafts", "Pottery", "Jewelry making", "Creative writing", "Poetry", "Literature", "Music composition", "Dance", "Theater", "Performance art"],
+      "responses": [
+        "Art is a powerful form of human expression that transcends cultural and language barriers!",
+        "Creative activities like painting, drawing, and crafting can be therapeutic and fulfilling.",
+        "Art museums and galleries showcase the incredible diversity of human artistic achievement.",
+        "Digital tools have opened up new possibilities for artistic creation and distribution.",
+        "Every person has creative potential that can be developed through practice and exploration.",
+        "Art education helps develop visual literacy, creativity, and appreciation for cultural heritage.",
+        "Creative expression through various mediums allows us to communicate emotions and ideas uniquely!"
+      ]
+    },
+    {
+      "tag": "philosophy_wisdom",
+      "patterns": ["Philosophy", "Meaning", "Purpose", "Existence", "Life", "Wisdom", "Ethics", "Morality", "Consciousness", "Reality", "Truth", "Knowledge", "Belief", "Faith", "Spirituality", "Religion", "God", "Meditation", "Mindfulness", "Inner peace", "Happiness", "Fulfillment", "Success", "Values", "Principles", "Character", "Virtue", "Good and evil", "Free will", "Destiny", "Fate", "Death", "Afterlife", "Soul", "Enlightenment"],
+      "responses": [
+        "Philosophy explores the fundamental questions about existence, knowledge, values, and meaning.",
+        "Wisdom traditions from around the world offer different perspectives on how to live well.",
+        "Questions about purpose, morality, and consciousness have fascinated humans throughout history.",
+        "Philosophical thinking encourages us to examine our beliefs and consider different viewpoints.",
+        "Ethical principles help guide our decisions and interactions with others in meaningful ways.",
+        "Contemplating life's big questions can lead to greater self-understanding and clarity.",
+        "Philosophy, spirituality, and wisdom traditions offer frameworks for finding meaning and purpose."
+      ]
+    },
+    {
+      "tag": "finance_money",
+      "patterns": ["Money", "Finance", "Budget", "Savings", "Investment", "Stock market", "Banking", "Credit", "Debt", "Loan", "Mortgage", "Insurance", "Retirement", "Pension", "Financial planning", "Wealth", "Income", "Salary", "Taxes", "Economy", "Inflation", "Interest rates", "Cryptocurrency", "Bitcoin", "Trading", "Forex", "Real estate", "Property", "Assets", "Liabilities", "Net worth", "Financial goals", "Emergency fund", "Compound interest"],
+      "responses": [
+        "Financial literacy is crucial for making informed decisions about money and achieving financial goals.",
+        "Good budgeting and saving habits form the foundation of financial security and independence.",
+        "Investing wisely can help build long-term wealth, though all investments carry some risk.",
+        "Understanding credit, debt, and interest helps people make better borrowing decisions.",
+        "Financial planning involves setting goals and creating strategies to achieve them over time.",
+        "For personalized financial advice, it's best to consult with qualified financial professionals.",
+        "Building an emergency fund and planning for retirement are important financial priorities for most people."
+      ]
+    },
+    {
+      "tag": "hobbies_interests",
+      "patterns": ["Hobbies", "Interests", "Passion", "Free time", "Leisure", "Collections", "Reading", "Writing", "Gardening", "Cooking", "Baking", "Crafts", "DIY", "Woodworking", "Knitting", "Sewing", "Painting", "Drawing", "Photography", "Music", "Instruments", "Singing", "Dancing", "Sports", "Fitness", "Hiking", "Camping", "Board games", "Puzzles", "Video games", "Model building", "Astronomy", "Bird watching", "Fishing", "Hunting", "Volunteering"],
+      "responses": [
+        "Hobbies and interests add richness, enjoyment, and personal fulfillment to our lives!",
+        "Pursuing passions and creative activities can be great for stress relief and mental well-being.",
+        "Hobbies often connect us with like-minded communities and new friendships.",
+        "Learning new skills through hobbies keeps our minds active and engaged throughout life.",
+        "Creative hobbies like art, music, and crafts allow for personal expression and artistic growth.",
+        "Outdoor hobbies connect us with nature and provide physical activity and fresh air.",
+        "Many hobbies can develop into valuable skills or even career opportunities over time!"
+      ]
+    },
+    {
+      "tag": "compliments",
+      "patterns": ["Thank you", "Thanks", "Great job", "Awesome", "Amazing", "Wonderful", "Excellent", "Fantastic", "Brilliant", "Perfect", "Outstanding", "Incredible", "Marvelous", "Superb", "Impressive", "You're the best", "Well done", "Good work", "Appreciate it", "Grateful"],
+      "responses": [
+        "You're very welcome! I'm glad I could help.",
+        "Thank you for the kind words! It makes me happy to assist you.",
+        "I appreciate that! I'm here whenever you need help.",
+        "Thanks! It's my pleasure to help you.",
+        "You're too kind! I enjoy our conversations.",
+        "Thank you! I'm always here to help and chat with you.",
+        "I'm so glad you found our conversation helpful! That's what I'm here for.",
+        "Your appreciation means a lot! I love being able to assist you.",
+        "Thank you! I aim to be as helpful as possible in all our interactions."
+      ]
+    },
+    {
+      "tag": "problem_solving",
+      "patterns": ["Problem", "Solve", "Solution", "Help me", "Stuck", "Challenge", "Difficulty", "Issue", "Trouble", "Fix", "Repair", "Broken", "Not working", "Error", "Bug", "Mistake", "Wrong", "Confused", "Lost", "Need guidance", "Advice", "Suggestion", "Recommendation", "How to", "What should I do"],
+      "responses": [
+        "I'd be happy to help you work through this problem! Can you tell me more about it?",
+        "Problem-solving often involves breaking things down into smaller, manageable steps.",
+        "What specific challenge are you facing? I'll do my best to help you find a solution.",
+        "Sometimes talking through a problem can help clarify the best approach. What's going on?",
+        "Every problem has potential solutions. Let's explore what options might work for your situation.",
+        "I'm here to help! What kind of problem or challenge are you dealing with?",
+        "Let's approach this systematically - can you describe the issue in detail so I can better assist you?"
+      ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "Goodbye", "See you later", "Take care", "Until next time"],
-      "responses": ["Goodbye! Have a great day!", "See you later!", "Take care! Come back anytime."]
-    },
-    {
-      "tag": "ai_info",
-      "patterns": ["What are you", "Who are you", "Tell me about yourself", "What is AI"],
-      "responses": ["I'm an AI-powered chatbot designed to help answer your questions and have conversations with you!", "I'm an artificial intelligence assistant created to help users like yourself."]
-    },
-    {
-      "tag": "weather",
-      "patterns": ["What's the weather", "Weather forecast", "Is it raining", "Temperature"],
-      "responses": ["I don't have access to real-time weather data, but I recommend checking a weather app or website for current conditions in your area."]
-    },
-    {
-      "tag": "time",
-      "patterns": ["What time is it", "Current time", "Time now"],
-      "responses": ["I don't have access to real-time data, but you can check the time on your device or computer."]
-    },
-    {
-      "tag": "help",
-      "patterns": ["Help", "What can you do", "How can you help", "Assistance"],
-      "responses": ["I can help answer questions, provide information, and have conversations with you! Feel free to ask me anything.", "I'm here to assist you with various topics. What would you like to know?"]
+      "patterns": ["Bye", "Goodbye", "See you later", "Take care", "Until next time", "Farewell", "Catch you later", "Gotta go", "See ya", "Talk to you later", "Have a good day", "Have a good night", "Time to go", "Leaving now", "Thanks for everything", "Peace out", "Adios", "Au revoir", "Ciao"],
+      "responses": [
+        "Goodbye! Have a great day!", 
+        "See you later!", 
+        "Take care! Come back anytime.",
+        "Farewell! It was great chatting with you.",
+        "Bye! Have a wonderful time ahead!",
+        "Until next time! Don't hesitate to return if you need assistance.",
+        "See you soon! Wishing you all the best!",
+        "Take care and have an amazing day ahead!",
+        "It was wonderful talking with you! Come back anytime you need help.",
+        "Goodbye! I'm always here when you need assistance or just want to chat!"
+      ]
     }
   ]
 }

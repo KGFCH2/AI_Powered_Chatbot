@@ -174,7 +174,12 @@ class ChatManager {
         
         const avatar = document.createElement('div');
         avatar.className = sender === 'user' ? 'user-avatar' : 'ai-avatar';
-        avatar.innerHTML = sender === 'user' ? '<i class="fas fa-user"></i>' : '<i class="fas fa-robot"></i>';
+        
+        const avatarImg = document.createElement('img');
+        avatarImg.className = 'avatar-img';
+        avatarImg.alt = `${sender} Avatar`;
+        avatarImg.src = sender === 'user' ? '/static/images/user-avatar.svg' : '/static/images/robot-avatar.svg';
+        avatar.appendChild(avatarImg);
         
         const messageContent = document.createElement('div');
         messageContent.className = 'message-content';

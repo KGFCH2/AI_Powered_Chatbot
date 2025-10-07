@@ -4,13 +4,18 @@
 
 {% block content %}
 <div class="landing-container">
+    <!-- Logo Section -->
+    <div class="logo-section">
+        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="AI Chatbot Logo" class="main-logo">
+    </div>
+    
     <div class="hero-section">
         <div class="hero-content">
             <h1 class="hero-title gradient-text">
                 <span class="typing-text">AI-Powered Chatbot</span>
             </h1>
             <p class="hero-subtitle">
-                Experience intelligent conversations with our advanced AI assistant
+                Experience intelligent conversations with our advanced AI assistant powered by cutting-edge Natural Language Processing
             </p>
             <div class="hero-buttons">
                 <a href="{{ url_for('login') }}" class="btn btn-primary">
@@ -64,7 +69,7 @@
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <div class="feature-icon">
-                            <i class="fas fa-brain"></i>
+                            <img src="{{ url_for('static', filename='images/brain-icon.svg') }}" alt="AI Brain" class="feature-icon-img">
                         </div>
                         <h3>Intelligent AI</h3>
                         <p>Advanced NLP powered responses</p>
@@ -80,7 +85,7 @@
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <div class="feature-icon">
-                            <i class="fas fa-comments"></i>
+                            <img src="{{ url_for('static', filename='images/chat-icon.svg') }}" alt="Chat" class="feature-icon-img">
                         </div>
                         <h3>Natural Conversations</h3>
                         <p>Human-like chat interactions</p>

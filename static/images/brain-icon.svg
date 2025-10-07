@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="brainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <path d="M12 2C8.5 2 6 4.5 6 8c0 1.5 0.5 3 1.5 4C8.5 13 9 14.5 9 16c0 2.5 2 4.5 4.5 4.5S18 18.5 18 16c0-1.5 0.5-3 1.5-4C20.5 11 21 9.5 21 8c0-3.5-2.5-6-6-6h-3z" fill="url(#brainGradient)"/>
+  
+  <!-- Brain texture lines -->
+  <path d="M9 8 Q12 6 15 8" stroke="white" stroke-width="0.5" fill="none" opacity="0.7"/>
+  <path d="M9 11 Q12 9 15 11" stroke="white" stroke-width="0.5" fill="none" opacity="0.7"/>
+  <path d="M10 14 Q12 12 14 14" stroke="white" stroke-width="0.5" fill="none" opacity="0.7"/>
+</svg>
